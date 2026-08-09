@@ -51,7 +51,7 @@ function createId() {
 export function Chatbot() {
   const locale = (useLocale() === "en" ? "en" : "fr") as ChatLocale;
   const t = ui[locale];
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [typing, setTyping] = useState(false);
   const [pendingOffer, setPendingOffer] = useState<"contact" | "tour" | null>(
