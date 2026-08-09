@@ -57,13 +57,13 @@ export async function POST(request: Request) {
       ts: new Date().toISOString(),
     };
 
+    // Best-effort: file storage may be unavailable on serverless
     await appendJsonl("analytics/events.jsonl", event);
 
     return NextResponse.json({ ok: true });
-  } catch {
-    return NextResponse.json(
-      { ok: false, error: "server_error" },
-      { status: 500 },
-    );
+  } catch (error) {
+    console.error("[track] server_error", error);
+    // Never break the site for analytics failures
+    return NextResponse.json({ ok: true, skipped: true });
   }
 }
