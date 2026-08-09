@@ -5,28 +5,51 @@ import { sendContactNotification } from "@/lib/mail";
 import type { LeadRecord } from "@/lib/analytics-types";
 
 type ContactPayload = {
-  name?: string;
-  email?: string;
-  phone?: string;
-  company?: string;
-  subject?: string;
-  message?: string;
-  visitorId?: string;
-  sessionId?: string;
-  locale?: string;
-  consentPrivacy?: boolean;
+  name?: unknown;
+  email?: unknown;
+  phone?: unknown;
+  company?: unknown;
+  subject?: unknown;
+  message?: unknown;
+  visitorId?: unknown;
+  sessionId?: unknown;
+  locale?: unknown;
+  consentPrivacy?: unknown;
 };
+
+function asString(value: unknown) {
+  if (typeof value === "string") return value.trim();
+  if (typeof value === "number" || typeof value === "boolean") {
+    return String(value).trim();
+  }
+  return "";
+}
+
+function asConsent(value: unknown) {
+  return (
+    value === true ||
+    value === 1 ||
+    value === "1" ||
+    value === "true" ||
+    value === "on" ||
+    value === "yes"
+  );
+}
 
 export async function POST(request: Request) {
   try {
     const body = (await request.json()) as ContactPayload;
 
-    const name = body.name?.trim() ?? "";
-    const email = body.email?.trim().toLowerCase() ?? "";
-    const message = body.message?.trim() ?? "";
-    const subject = body.subject?.trim() ?? "";
-    const phone = body.phone?.trim() ?? "";
-    const company = body.company?.trim() ?? "";
+    const name = asString(body.name);
+    const email = asString(body.email).toLowerCase();
+    const message = asString(body.message);
+    const subject = asString(body.subject);
+    const phone = asString(body.phone);
+    const company = asString(body.company);
+    const visitorId = asString(body.visitorId);
+    const sessionId = asString(body.sessionId);
+    const locale = asString(body.locale);
+    const consentPrivacy = asConsent(body.consentPrivacy);
 
     if (!name || !email || !message || !subject) {
       return NextResponse.json(
@@ -42,7 +65,7 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!body.consentPrivacy) {
+    if (!consentPrivacy) {
       return NextResponse.json(
         { ok: false, error: "consent_required" },
         { status: 400 },
@@ -58,9 +81,9 @@ export async function POST(request: Request) {
       company: company || undefined,
       subject,
       message,
-      visitorId: body.visitorId?.slice(0, 80),
-      sessionId: body.sessionId?.slice(0, 80),
-      locale: body.locale?.slice(0, 10),
+      visitorId: visitorId.slice(0, 80) || undefined,
+      sessionId: sessionId.slice(0, 80) || undefined,
+      locale: locale.slice(0, 10) || undefined,
       consentMarketing: true,
       createdAt: new Date().toISOString(),
     };

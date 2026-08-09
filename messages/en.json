@@ -245,7 +245,7 @@
     "successTitle": "Message sent",
     "success": "Thank you! Your message has been sent. We will get back to you shortly.",
     "successClose": "Close",
-    "error": "Something went wrong. Please try again in a moment.",
+    "error": "Unable to send. Check required fields, subject, and the consent checkbox.",
     "infoAddress": "Address",
     "infoPhone": "Phone",
     "infoEmail": "Email"

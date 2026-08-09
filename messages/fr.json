@@ -245,7 +245,7 @@
     "successTitle": "Message envoyé",
     "success": "Merci ! Votre message a bien été envoyé. Nous vous recontactons rapidement.",
     "successClose": "Fermer",
-    "error": "Une erreur est survenue. Veuillez réessayer dans un instant.",
+    "error": "Envoi impossible. Vérifiez les champs obligatoires, le sujet et la case de consentement.",
     "infoAddress": "Adresse",
     "infoPhone": "Téléphone",
     "infoEmail": "E-mail"

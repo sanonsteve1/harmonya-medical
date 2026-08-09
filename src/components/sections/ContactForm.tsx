@@ -19,32 +19,52 @@ export function ContactForm() {
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setStatus("loading");
 
     const form = event.currentTarget;
+    if (!form.reportValidity()) return;
+
     const data = new FormData(form);
+    const name = String(data.get("name") ?? "").trim();
+    const email = String(data.get("email") ?? "").trim();
+    const phone = String(data.get("phone") ?? "").trim();
+    const company = String(data.get("company") ?? "").trim();
+    const subject = String(data.get("subject") ?? "").trim();
+    const message = String(data.get("message") ?? "").trim();
+    const consentPrivacy = data.get("consentPrivacy") === "yes";
     const { visitorId, sessionId } = getTrackingIds();
+
+    if (!name || !email || !subject || !message || !consentPrivacy) {
+      setStatus("error");
+      return;
+    }
+
+    setStatus("loading");
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: data.get("name"),
-          email: data.get("email"),
-          phone: data.get("phone"),
-          company: data.get("company"),
-          subject: data.get("subject"),
-          message: data.get("message"),
-          consentPrivacy: data.get("consentPrivacy") === "on",
+          name,
+          email,
+          phone,
+          company,
+          subject,
+          message,
+          consentPrivacy,
           visitorId,
           sessionId,
           locale,
         }),
       });
 
-      if (!response.ok) {
-        throw new Error("request_failed");
+      const result = (await response.json().catch(() => null)) as {
+        ok?: boolean;
+        error?: string;
+      } | null;
+
+      if (!response.ok || !result?.ok) {
+        throw new Error(result?.error || "request_failed");
       }
 
       form.reset();
@@ -56,7 +76,7 @@ export function ContactForm() {
 
   return (
     <>
-      <form onSubmit={onSubmit} className="space-y-4" noValidate>
+      <form onSubmit={onSubmit} className="space-y-4">
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label htmlFor="contact-name" className="mb-1.5 block text-sm font-semibold text-navy">
@@ -157,8 +177,9 @@ export function ContactForm() {
           <input
             type="checkbox"
             name="consentPrivacy"
+            value="yes"
             required
-            className="mt-1 accent-teal"
+            className="mt-1 h-4 w-4 shrink-0 accent-teal"
           />
           <span>
             {t("consent")}{" "}
