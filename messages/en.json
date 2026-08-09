@@ -305,6 +305,7 @@
     "error": "Invalid key or unable to load data.",
     "empty": "No data yet.",
     "emptyEmails": "No voluntary emails yet. They will appear via contact or newsletter.",
+    "ephemeralWarning": "Temporary storage: on Vercel, leads can disappear after a refresh (not from clicking the email). Add Upstash Redis (KV_REST_API_URL + KV_REST_API_TOKEN) in environment variables to keep them. Contact messages still arrive by email.",
     "topPages": "Top pages",
     "topClicks": "Top clicks",
     "emails": "Identified emails",
