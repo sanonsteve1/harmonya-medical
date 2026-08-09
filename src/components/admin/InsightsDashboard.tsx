@@ -13,6 +13,7 @@ import { Container } from "@/components/ui/Container";
 
 type InsightsPayload = {
   generatedAt: string;
+  persistent?: boolean;
   summary: {
     uniqueVisitors: number;
     sessions: number;
@@ -99,8 +100,11 @@ export function InsightsDashboard() {
         setData(json);
         sessionStorage.setItem(KEY_STORAGE, adminKey);
       } catch {
-        setData(null);
-        setError(t("error"));
+        // Soft refresh must not wipe the dashboard on a transient failure
+        if (!soft) {
+          setData(null);
+          setError(t("error"));
+        }
       } finally {
         if (!soft) setLoading(false);
       }
@@ -268,6 +272,11 @@ export function InsightsDashboard() {
 
         {data && (
           <div className="mt-8 space-y-6">
+            {data.persistent === false && (
+              <p className="rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+                {t("ephemeralWarning")}
+              </p>
+            )}
             <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
               <StatCard
                 label={t("stats.visitors")}
@@ -480,9 +489,12 @@ export function InsightsDashboard() {
                             className="border-t border-line/70 transition-colors hover:bg-mist/60"
                           >
                             <td className="py-3 pr-4">
-                              <p className="font-semibold text-navy">
+                              <a
+                                href={`mailto:${lead.email}`}
+                                className="font-semibold text-navy underline-offset-2 hover:text-teal hover:underline"
+                              >
                                 {lead.email}
-                              </p>
+                              </a>
                               {lead.company && (
                                 <p className="text-xs text-slate">
                                   {lead.company}

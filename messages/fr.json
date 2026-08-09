@@ -305,6 +305,7 @@
     "error": "Clé invalide ou impossible de charger les données.",
     "empty": "Aucune donnée pour le moment.",
     "emptyEmails": "Aucun e-mail volontaire pour l'instant. Ils apparaîtront via contact ou newsletter.",
+    "ephemeralWarning": "Stockage temporaire : sur Vercel, les leads peuvent disparaître après un rafraîchissement (pas le clic sur l'e-mail). Ajoutez Upstash Redis (KV_REST_API_URL + KV_REST_API_TOKEN) dans les variables d'environnement pour les conserver. Les messages contact arrivent toujours par e-mail.",
     "topPages": "Pages les plus vues",
     "topClicks": "Clics les plus fréquents",
     "emails": "E-mails identifiés",

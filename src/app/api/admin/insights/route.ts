@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { readJsonl } from "@/lib/storage";
+import { isPersistentStorage, readJsonl } from "@/lib/storage";
 import type { LeadRecord, TrackEvent } from "@/lib/analytics-types";
 
 function getAdminKey() {
@@ -166,6 +166,7 @@ export async function GET(request: Request) {
 
   return NextResponse.json({
     ok: true,
+    persistent: isPersistentStorage(),
     generatedAt: new Date().toISOString(),
     summary: {
       uniqueVisitors: visitors.size,
