@@ -1,0 +1,396 @@
+{
+  "Meta": {
+    "title": "HARMONYA MEDICAL | Agence de promotion de produits pharmaceutiques",
+    "description": "HARMONYA MEDICAL accompagne les laboratoires pharmaceutiques dans la promotion éthique, la formation et le déploiement de traitements de qualité."
+  },
+  "Nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "products": "Produits",
+    "news": "Actualités",
+    "contact": "Contact",
+    "contactUs": "Contactez-nous",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mainNav": "Navigation principale",
+    "changeLanguage": "Changer de langue"
+  },
+  "Theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "auto": "Auto ({mode})",
+    "autoShort": "Auto",
+    "toggle": "Thème : {mode}. Cliquer pour changer"
+  },
+  "Hero": {
+    "eyebrow": "Agence de promotion de produits pharmaceutiques",
+    "subtitle": "Promouvoir aujourd'hui les traitements de demain — avec science, éthique et impact durable en Afrique de l'Ouest.",
+    "ctaServices": "Explorer nos services",
+    "ctaProducts": "Voir les produits",
+    "statPros": "Professionnels",
+    "statLabs": "Laboratoires",
+    "statCountries": "Pays"
+  },
+  "HeroVisual": {
+    "innovation": "Innovation",
+    "title": "Traitements de demain",
+    "text": "Science, éthique et impact au cœur de chaque partenariat.",
+    "quality": "Qualité & éthique",
+    "expertise": "Expertise scientifique",
+    "impact": "Impact durable",
+    "network": "Réseau terrain"
+  },
+  "Stats": {
+    "pros": "Professionnels accompagnés",
+    "labs": "Laboratoires partenaires",
+    "products": "Produits référencés",
+    "countries": "Pays d'intervention"
+  },
+  "About": {
+    "label": "À propos",
+    "missionTitle": "Notre mission",
+    "missionText": "Faciliter l'accès à des traitements de qualité grâce à une promotion médicale responsable.",
+    "title": "La précision scientifique au service d'une santé accessible.",
+    "text": "Basée à Ouagadougou, HARMONYA MEDICAL relie laboratoires et professionnels de santé avec une approche moderne, humaine et orientée résultats — pour accélérer l'adoption des bonnes pratiques thérapeutiques.",
+    "alt": "Professionnelle de santé",
+    "pillars": {
+      "quality": {
+        "title": "Qualité & éthique",
+        "text": "Standards internationaux, transparence totale."
+      },
+      "support": {
+        "title": "Accompagnement",
+        "text": "Proximité terrain et suivi opérationnel."
+      },
+      "impact": {
+        "title": "Impact mesurable",
+        "text": "Indicateurs clairs, résultats pilotés."
+      }
+    }
+  },
+  "Domains": {
+    "label": "Domaines d'intervention",
+    "title": "Une plateforme d'expertise pour accélérer votre impact.",
+    "subtitle": "Quatre leviers interconnectés pour déployer vos thérapies avec méthode et ambition.",
+    "learnMore": "En savoir plus",
+    "items": {
+      "promotion": {
+        "title": "Promotion médicale",
+        "description": "Stratégies de visite éthiques et ciblées auprès des prescripteurs."
+      },
+      "training": {
+        "title": "Formation & information",
+        "description": "Programmes scientifiques et supports pédagogiques."
+      },
+      "partnerships": {
+        "title": "Partenariats stratégiques",
+        "description": "Connexion durable entre laboratoires et institutions."
+      },
+      "distribution": {
+        "title": "Distribution & logistique",
+        "description": "Circuits fiables pour une disponibilité optimale."
+      }
+    }
+  },
+  "Products": {
+    "label": "Nos produits",
+    "title": "Des gammes conçues pour des résultats durables.",
+    "cta": "Voir tous les produits",
+    "items": {
+      "anti": {
+        "title": "Anti-infectieux",
+        "description": "Contrôle des infections"
+      },
+      "neuro": {
+        "title": "Neurologie",
+        "description": "Système nerveux"
+      },
+      "cardio": {
+        "title": "Cardiologie",
+        "description": "Santé cardiovasculaire"
+      },
+      "general": {
+        "title": "Médecine générale",
+        "description": "Pratique quotidienne"
+      }
+    }
+  },
+  "Approach": {
+    "label": "Notre approche",
+    "title": "Un protocole rigoureux, centré sur l'impact.",
+    "steps": {
+      "01": {
+        "title": "Comprendre",
+        "text": "Diagnostic marché, enjeux cliniques et objectifs."
+      },
+      "02": {
+        "title": "Sélectionner",
+        "text": "Cibles prioritaires et messages à fort impact."
+      },
+      "03": {
+        "title": "Informer",
+        "text": "Diffusion scientifique claire et éthique."
+      },
+      "04": {
+        "title": "Accompagner",
+        "text": "Support opérationnel des équipes terrain."
+      },
+      "05": {
+        "title": "Évaluer",
+        "text": "Mesure des résultats et optimisation continue."
+      }
+    }
+  },
+  "WhyUs": {
+    "label": "Pourquoi nous choisir",
+    "title": "Un allié stratégique pour vos ambitions de santé.",
+    "partnersTitle": "Partenaires laboratoires",
+    "partnersText": "Un réseau de confiance avec des acteurs pharmaceutiques de référence.",
+    "partnersCta": "Voir tous les partenaires",
+    "reasons": {
+      "1": "Expertise locale ancrée dans les réalités du terrain",
+      "2": "Équipes formées aux standards scientifiques internationaux",
+      "3": "Réseau étendu de professionnels et d'institutions de santé",
+      "4": "Approche éthique, transparente et mesurable",
+      "5": "Accompagnement de bout en bout, de la stratégie au déploiement"
+    }
+  },
+  "News": {
+    "label": "Actualités & ressources",
+    "title": "Informer. Former. Inspirer.",
+    "readMore": "Lire la suite",
+    "newsletterLabel": "Newsletter",
+    "newsletterTitle": "Restez dans la boucle",
+    "newsletterText": "Insights, formations et actualités du secteur pharmaceutique.",
+    "emailPlaceholder": "Votre e-mail",
+    "subscribe": "S'abonner",
+    "articles": {
+      "1": {
+        "category": "Actualité",
+        "date": "12 mars 2026",
+        "title": "Renforcer l'accès aux traitements essentiels",
+        "excerpt": "Retour sur nos actions de terrain auprès des professionnels."
+      },
+      "2": {
+        "category": "Formation",
+        "date": "28 févr. 2026",
+        "title": "Session scientifique : bonnes pratiques",
+        "excerpt": "Une journée d'échanges entre experts et équipes médicales."
+      },
+      "3": {
+        "category": "Partenariat",
+        "date": "10 janv. 2026",
+        "title": "Nouveau partenariat pour une promotion éthique",
+        "excerpt": "HARMONYA MEDICAL élargit son réseau de laboratoires."
+      }
+    }
+  },
+  "Testimonials": {
+    "label": "Ils nous font confiance",
+    "title": "La voix des professionnels de santé.",
+    "items": {
+      "1": {
+        "name": "Dr. Amadou T.",
+        "role": "Médecin généraliste",
+        "quote": "Une équipe professionnelle, à l'écoute, qui apporte une vraie valeur dans l'information médicale de terrain."
+      },
+      "2": {
+        "name": "Dr. Fatoumata K.",
+        "role": "Cardiologue",
+        "quote": "HARMONYA MEDICAL combine rigueur scientifique et proximité. Un partenaire fiable pour nos échanges cliniques."
+      },
+      "3": {
+        "name": "Dr. Joseph M.",
+        "role": "Pharmacien hospitalier",
+        "quote": "Des actions concrètes, des contenus clairs et un suivi exemplaire. Nous recommandons vivement leur approche."
+      }
+    }
+  },
+  "CTA": {
+    "label": "Partenariat",
+    "title": "Devenez partenaire de confiance",
+    "text": "Discutons de vos objectifs de promotion, de formation ou de déploiement produit. Notre équipe vous accompagne avec méthode.",
+    "button": "Contactez-nous"
+  },
+  "Contact": {
+    "label": "Contact",
+    "title": "Parlons de votre prochain projet.",
+    "text": "Remplissez le formulaire : notre équipe vous répond sous 24 à 48 heures ouvrées.",
+    "formTitle": "Envoyez-nous un message",
+    "formText": "Tous les champs marqués d'un * sont obligatoires.",
+    "name": "Nom complet",
+    "namePlaceholder": "Votre nom",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "phone": "Téléphone",
+    "phonePlaceholder": "+226 XX XX XX XX",
+    "company": "Organisation",
+    "companyPlaceholder": "Laboratoire, clinique, institution…",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Choisissez un sujet",
+    "subjects": {
+      "partnership": "Partenariat",
+      "services": "Nos services",
+      "products": "Nos produits",
+      "training": "Formation",
+      "other": "Autre"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Décrivez votre besoin…",
+    "consent": "J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la",
+    "privacyLink": "politique de confidentialité",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours…",
+    "successTitle": "Message envoyé",
+    "success": "Merci ! Votre message a bien été envoyé. Nous vous recontactons rapidement.",
+    "successClose": "Fermer",
+    "error": "Une erreur est survenue. Veuillez réessayer dans un instant.",
+    "infoAddress": "Adresse",
+    "infoPhone": "Téléphone",
+    "infoEmail": "E-mail"
+  },
+  "Consent": {
+    "title": "Votre confidentialité",
+    "text": "Nous utilisons des cookies et un suivi d'audience pour comprendre comment le site est utilisé et améliorer nos services. Aucun e-mail n'est collecté sans votre saisie volontaire.",
+    "privacyLink": "En savoir plus",
+    "accept": "Accepter le suivi",
+    "refuse": "Refuser"
+  },
+  "Newsletter": {
+    "title": "Restez informé",
+    "text": "Recevez nos actualités médicales. Votre e-mail n'est enregistré que si vous le fournissez.",
+    "email": "E-mail",
+    "placeholder": "vous@exemple.com",
+    "submit": "S'inscrire",
+    "sending": "…",
+    "consent": "J'accepte de recevoir des informations et j'ai lu la",
+    "privacyLink": "politique de confidentialité",
+    "success": "Inscription confirmée. Merci !",
+    "error": "Inscription impossible. Vérifiez votre e-mail et le consentement."
+  },
+  "Privacy": {
+    "label": "Confidentialité",
+    "title": "Politique de confidentialité",
+    "intro": "HARMONYA MEDICAL traite les données de navigation et les données de contact de façon transparente, proportionnée et sécurisée.",
+    "data": {
+      "title": "Données collectées",
+      "text": "Nous pouvons collecter un identifiant anonyme de visite, des pages consultées, des clics, la profondeur de scroll, la langue, le referrer et l'agent utilisateur. Les e-mails et messages ne sont collectés que lorsque vous les saisissez dans un formulaire."
+    },
+    "analytics": {
+      "title": "Suivi d'audience",
+      "text": "Le suivi comportemental ne démarre qu'après votre acceptation via le bandeau de consentement. Vous pouvez refuser : dans ce cas, aucune mesure d'audience n'est enregistrée."
+    },
+    "emails": {
+      "title": "Adresses e-mail",
+      "text": "Nous ne récupérons jamais automatiquement l'e-mail d'un visiteur. Un e-mail n'est stocké que via le formulaire de contact ou la newsletter, avec case de consentement cochée. Il peut alors être associé à votre parcours anonyme pour un meilleur suivi commercial."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "text": "Selon la réglementation applicable, vous pouvez demander l'accès, la rectification ou la suppression de vos données en nous contactant à contact@harmonyamedical.com."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Pour toute question relative à la confidentialité : contact@harmonyamedical.com — Ouagadougou, Burkina Faso."
+    }
+  },
+  "Insights": {
+    "label": "Administration",
+    "title": "Suivi des visiteurs & leads",
+    "text": "Pilotage en temps réel : audience anonyme, parcours, clics et e-mails collectés avec consentement.",
+    "keyPlaceholder": "Clé d'administration",
+    "submit": "Ouvrir le tableau",
+    "reload": "Actualiser",
+    "loading": "Chargement…",
+    "error": "Clé invalide ou impossible de charger les données.",
+    "empty": "Aucune donnée pour le moment.",
+    "emptyEmails": "Aucun e-mail volontaire pour l'instant. Ils apparaîtront via contact ou newsletter.",
+    "topPages": "Pages les plus vues",
+    "topClicks": "Clics les plus fréquents",
+    "emails": "E-mails identifiés",
+    "leads": "Leads collectés",
+    "recent": "Flux d'activité",
+    "recentHint": "Derniers événements enregistrés sur la plateforme.",
+    "timeline": "Activité sur 14 jours",
+    "timelineHint": "Volume d'événements et de pages vues jour par jour.",
+    "byType": "Répartition des événements",
+    "byTypeHint": "Composition du trafic mesuré.",
+    "scrollDepth": "Profondeur de lecture",
+    "locales": "Langues",
+    "journeysTitle": "Parcours des sessions",
+    "journeysHint": "Chemin suivi par les 20 sessions les plus récentes.",
+    "anonymousVisitor": "Visiteur anonyme",
+    "pageviewsShort": "pages",
+    "eventsShort": "événements",
+    "search": "Rechercher un lead…",
+    "export": "Exporter CSV",
+    "updated": "Mis à jour",
+    "autoRefresh": "Auto 30s",
+    "refresh": "Rafraîchir",
+    "liveBadge": "{count} evt / heure",
+    "tabs": {
+      "overview": "Vue d'ensemble",
+      "journeys": "Parcours",
+      "leads": "Leads",
+      "live": "Temps réel"
+    },
+    "chart": {
+      "pageviews": "Pages vues",
+      "events": "Événements",
+      "leads": "Leads"
+    },
+    "types": {
+      "pageview": "Page",
+      "click": "Clic",
+      "scroll": "Scroll",
+      "identify": "Identifié",
+      "heartbeat": "Heartbeat"
+    },
+    "stats": {
+      "visitors": "Visiteurs uniques",
+      "sessions": "Sessions",
+      "pageviews": "Pages vues",
+      "events": "Événements",
+      "leads": "Leads",
+      "emails": "E-mails",
+      "conversion": "Taux de conversion",
+      "engagement": "Evt / session"
+    },
+    "hints": {
+      "visitors": "{count} événements sur 24 h",
+      "sessions": "{count} sessions au total",
+      "leads": "{count} leads collectés",
+      "clicks": "{count} clics suivis"
+    },
+    "table": {
+      "email": "E-mail",
+      "source": "Source",
+      "name": "Nom",
+      "date": "Date"
+    }
+  },
+  "Footer": {
+    "blurb": "Agence de promotion de produits pharmaceutiques engagée pour une santé meilleure et accessible en Afrique de l'Ouest.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "resources": "Ressources",
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "sitemap": "Plan du site",
+    "navHome": "Accueil",
+    "navAbout": "À propos",
+    "navServices": "Services",
+    "navProducts": "Produits",
+    "navContact": "Contact",
+    "svcPromotion": "Promotion médicale",
+    "svcTraining": "Formation & information",
+    "svcPartnerships": "Partenariats",
+    "svcDistribution": "Distribution",
+    "resNews": "Actualités",
+    "resBlog": "Blog",
+    "resFaq": "FAQ",
+    "resDocs": "Documentation"
+  }
+}
