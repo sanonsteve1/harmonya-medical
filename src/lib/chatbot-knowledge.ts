@@ -138,8 +138,8 @@ const intents: Intent[] = [
       /\bforms?\b/,
     ],
     answer: {
-      fr: "Parfait — je vous oriente vers le formulaire de contact. Vous pouvez aussi écrire à contact@harmonyamedical.com (réponse sous 24 à 48 h ouvrées).",
-      en: "Perfect — I’ll take you to the contact form. You can also email contact@harmonyamedical.com (reply within 24–48 business hours).",
+      fr: "Parfait — je vous oriente vers le formulaire de contact. Vous pouvez aussi écrire à harmonya.medical@gmail.com ou appeler le +226 78 33 75 25 (réponse sous 24 à 48 h ouvrées).",
+      en: "Perfect — I’ll take you to the contact form. You can also email harmonya.medical@gmail.com or call +226 78 33 75 25 (reply within 24–48 business hours).",
     },
     action: "contact",
   },

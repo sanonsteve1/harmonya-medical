@@ -9,11 +9,11 @@ export async function Contact() {
 
   const infos = [
     { label: t("infoAddress"), value: "Ouagadougou, Burkina Faso" },
-    { label: t("infoPhone"), value: "+226 XX XX XX XX", href: "tel:+22600000000" },
+    { label: t("infoPhone"), value: "+226 78 33 75 25", href: "tel:+22678337525" },
     {
       label: t("infoEmail"),
-      value: "contact@harmonyamedical.com",
-      href: "mailto:contact@harmonyamedical.com",
+      value: "harmonya.medical@gmail.com",
+      href: "mailto:harmonya.medical@gmail.com",
     },
   ];
 

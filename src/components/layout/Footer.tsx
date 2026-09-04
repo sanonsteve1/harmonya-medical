@@ -122,16 +122,16 @@ export async function Footer() {
               Burkina Faso
             </li>
             <li>
-              <a href="tel:+22600000000" className="hover:text-teal">
-                +226 XX XX XX XX
+              <a href="tel:+22678337525" className="hover:text-teal">
+                +226 78 33 75 25
               </a>
             </li>
             <li>
               <a
-                href="mailto:contact@harmonyamedical.com"
+                href="mailto:harmonya.medical@gmail.com"
                 className="hover:text-teal"
               >
-                contact@harmonyamedical.com
+                harmonya.medical@gmail.com
               </a>
             </li>
           </ul>
